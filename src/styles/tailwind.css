@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme: #2980b9;
+  --accent: #ff8200;
+  --text: #fff;
+}
+
+body {
+  background-color: var(--theme);
+  background: linear-gradient(0deg, #182848 0%, var(--theme) 50%);
+  color: var(--text);
+}
+
+h1 {
+  color: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}

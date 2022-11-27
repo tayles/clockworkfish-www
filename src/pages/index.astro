@@ -1,0 +1,21 @@
+---
+import { Icon } from '@component/Icon';
+
+import { Layout } from '@globals';
+
+import CwfIcon from '@icon/clockworkfish.svg';
+---
+
+<Layout title="Hello" ogTitle="CWF">
+  <section class="flex-1 flex flex-col justify-between">
+    <div
+      class="max-w-xl mx-auto flex flex-col justify-center items-center flex-1 gap-10"
+    >
+      <div class="flex items-center">
+        <h1 class="text-6xl font-semibold">
+          <Icon src={CwfIcon} alt="Clockwork Fish icon" />
+        </h1>
+      </div>
+    </div>
+  </section>
+</Layout>
