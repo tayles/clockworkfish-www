@@ -1,0 +1,26 @@
+---
+import { Bubble } from '@component/Bubble';
+import { Fish } from '@component/Fish';
+---
+
+<div id="ocean" class="flex-1">
+  <Bubble size="30px" x="10%" delay="0.5s" duration="16s" opacity={0.2} />
+  <Bubble size="15px" x="40%" delay="1s" duration="10s" opacity={0.1} />
+  <Bubble size="10px" x="30%" delay="5s" duration="20s" opacity={0.3} />
+  <Bubble size="25px" x="40%" delay="8s" duration="17s" opacity={0.2} />
+  <Bubble size="30px" x="60%" delay="10s" duration="15s" opacity={0.1} />
+  <Bubble size="10px" x="80%" delay="3s" duration="30s" opacity={0.4} />
+  <Bubble size="15px" x="90%" delay="-7s" duration="25s" opacity={0.3} />
+  <Bubble size="20px" x="50%" delay="-5s" duration="19s" opacity={0.2} />
+  <Bubble size="40px" x="30%" delay="-21s" duration="16s" opacity={0.3} />
+  <Bubble size="30px" x="60%" delay="-13.75s" duration="20s" opacity={0.3} />
+  <Bubble size="25px" x="90%" delay="-10.5s" duration="19s" opacity={0.3} />
+  <Fish />
+</div>
+
+<style>
+  #ocean {
+    position: relative;
+    overflow: hidden;
+  }
+</style>

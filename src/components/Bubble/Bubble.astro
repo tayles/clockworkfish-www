@@ -1,0 +1,51 @@
+---
+export interface Props {
+  size: string;
+  x: string;
+  delay: string;
+  duration: string;
+  opacity: number;
+}
+
+const { size, x, delay, duration, opacity } = Astro.props as Props;
+---
+
+<div class="bubble"></div>
+
+<style define:vars={{ size, x, delay, duration, opacity }}>
+  .bubble {
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: -30px;
+    opacity: 0.2;
+    animation: bubble 15s ease-in-out infinite,
+      sideWays 4s ease-in-out infinite alternate;
+
+    width: var(--size);
+    height: var(--size);
+    left: var(--x);
+    animation-delay: var(--delay);
+    animation-duration: var(--duration);
+    opacity: var(--opacity);
+  }
+
+  @keyframes bubble {
+    0% {
+      transform: translateY(0%);
+      opacity: 0.06;
+    }
+    100% {
+      transform: translateY(-120vh);
+    }
+  }
+
+  @keyframes sideWays {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: 200px;
+    }
+  }
+</style>
