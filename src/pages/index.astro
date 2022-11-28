@@ -1,11 +1,17 @@
 ---
-import { Ocean } from '@component/Ocean';
+import { Paradise } from '@component/Paradise';
 
 import { Layout } from '@globals';
+import { seoConfig } from '@util/seo-config';
 ---
 
 <Layout title="Hello" ogTitle="CWF">
-  <section class="flex-1 flex flex-col justify-between">
-    <Ocean />
+  <section class="flex-1 flex flex-col relative justify-end">
+    <Paradise />
+    <div class="mx-auto p-4 z-0">
+      <p>
+        {seoConfig.description}
+      </p>
+    </div>
   </section>
 </Layout>

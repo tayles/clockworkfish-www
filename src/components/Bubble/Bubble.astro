@@ -35,7 +35,10 @@ const { size, x, delay, duration, opacity } = Astro.props as Props;
   @keyframes rise {
     0% {
       transform: translateY(0%);
-      opacity: 0.06;
+      opacity: 0.2;
+    }
+    80% {
+      opacity: 0;
     }
     100% {
       transform: translateY(-120vh);

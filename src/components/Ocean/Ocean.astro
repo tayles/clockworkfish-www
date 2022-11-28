@@ -1,9 +1,11 @@
 ---
 import { Bubble, type Bubbly } from '@component/Bubble';
 import { Fish } from '@component/Fish';
+import { Waves } from '@component/Waves';
 import { randomInt, randomNumber } from '@util/numbers';
+import { seoConfig } from '@util/seo-config';
 
-const NUM_BUBBLES = 20;
+const NUM_BUBBLES = 30;
 
 function generateBubble(): Bubbly {
   return {
@@ -18,14 +20,15 @@ function generateBubble(): Bubbly {
 const bubbles = Array.from({ length: NUM_BUBBLES }).map(generateBubble);
 ---
 
-<div id="ocean" class="flex-1">
+<div class="ocean flex-1">
   {bubbles.map((b) => <Bubble {...b} />)}
   <Fish />
 </div>
 
 <style>
-  #ocean {
+  .ocean {
     position: relative;
     overflow: hidden;
+    background: linear-gradient(0deg, var(--theme-alt) 0%, var(--theme) 50%);
   }
 </style>
