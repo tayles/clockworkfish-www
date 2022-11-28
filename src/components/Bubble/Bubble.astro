@@ -13,15 +13,7 @@ const { size, x, delay, duration, opacity } = Astro.props as Props;
 <div class="bubble"></div>
 
 <style define:vars={{ size, x, delay, duration, opacity }}>
-  .bubble {
-    border-radius: 100%;
-    position: absolute;
-    background-color: white;
-    bottom: -30px;
-    opacity: 0.2;
-    animation: bubble 15s ease-in-out infinite,
-      sideWays 4s ease-in-out infinite alternate;
-
+  div.bubble {
     width: var(--size);
     height: var(--size);
     left: var(--x);
@@ -29,8 +21,18 @@ const { size, x, delay, duration, opacity } = Astro.props as Props;
     animation-duration: var(--duration);
     opacity: var(--opacity);
   }
+</style>
 
-  @keyframes bubble {
+<style is:global>
+  .bubble {
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: -40px;
+    animation: rise 15s ease-in-out infinite,
+      sideways 4s ease-in-out infinite alternate;
+  }
+  @keyframes rise {
     0% {
       transform: translateY(0%);
       opacity: 0.06;
@@ -40,7 +42,7 @@ const { size, x, delay, duration, opacity } = Astro.props as Props;
     }
   }
 
-  @keyframes sideWays {
+  @keyframes sideways {
     0% {
       margin-left: 0px;
     }
