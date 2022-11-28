@@ -6,7 +6,8 @@ import type { ManifestOptions } from 'vite-plugin-pwa';
 export const seoConfig = {
   baseURL: 'https://cwf.tayles.co.uk',
   siteName: 'Clockwork Fish',
-  description: 'CWF is a design and development agency based in Toronto, Canada',
+  description:
+    'Clockwork Fish is a design and development agency based in Toronto, Canada',
   type: 'website',
   image: {
     url: 'https://cwf.tayles.co.uk/img/tayles-opengraph.png',
