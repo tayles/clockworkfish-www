@@ -10,9 +10,9 @@ import CwfIcon from '@icon/clockworkfish.svg';
 
 <style>
   .fish {
-    animation: swim 15s ease-in-out infinite reverse;
+    animation: swim 15s ease-in-out infinite;
     position: absolute;
-    right: -200px;
+    left: -200px;
     top: 50%;
     margin-top: -150px;
     z-index: 100;
@@ -24,42 +24,35 @@ import CwfIcon from '@icon/clockworkfish.svg';
       transform: translate(0, 0); /* Starting position */
     }
     20% {
-      transform: translate(
-        calc(-50vw - 100px),
-        0
-      ); /* Animate to center of screen */
+      transform: translate(80vw, -20vh); /* Animate to center of screen */
     }
     25% {
-      transform: translate(
-        calc(-50vw - 100px),
-        0
+      transform: translate(80vw),
+        -20vh
       ); /* Stay at the center for 1 second */
     }
     35% {
       transform: translate(
-        calc(-50vw - 100px),
-        -20vh
+        30vw,
+        30vh
       ); /* Animate up for 2 seconds */
     }
     50% {
       transform: translate(
-        -25vw,
-        15vh
+        25vw,
+        -15vh
       ); /* Animate bottom right for 3 seconds */
     }
     60% {
-      transform: translate(
-        -25vw,
-        -20vh
-      ); /* Animate up at right of the screen */
+      transform: translate(25vw, 20vh); /* Animate up at right of the screen */
     }
     67% {
-      transform: translate(-25vw, -20vh);
+      transform: translate(25vw, 20vh);
     }
 
     100% {
       transform: translate(
-        calc(-100vw - 300px),
+        calc(100vw + 300px),
         0
       ); /* Animate past left past the screen */
     }
