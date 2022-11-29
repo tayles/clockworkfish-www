@@ -5,7 +5,9 @@ import CwfIcon from '@icon/clockworkfish.svg';
 ---
 
 <div class="fish">
-  <Icon src={CwfIcon} alt="Clockwork Fish icon" />
+  <div class="wiggler">
+    <Icon src={CwfIcon} alt="Clockwork Fish icon" />
+  </div>
 </div>
 
 <style>
@@ -19,6 +21,19 @@ import CwfIcon from '@icon/clockworkfish.svg';
     filter: drop-shadow(1px 1px 3px var(--theme));
   }
 
+  .wiggler {
+    animation: wiggle 0.3s ease-in-out alternate infinite;
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: rotate3d(0, 1, 0, 0);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 30deg);
+    }
+  }
+
   @keyframes swim {
     0% {
       transform: translate(0, 0); /* Starting position */
@@ -27,24 +42,16 @@ import CwfIcon from '@icon/clockworkfish.svg';
       transform: translate(80vw, -20vh); /* Animate to center of screen */
     }
     25% {
-      transform: translate(80vw),
-        -20vh
-      ); /* Stay at the center for 1 second */
+      transform: translate(80vw, -20vh); /* Stay at the center for 1 second */
     }
     35% {
-      transform: translate(
-        30vw,
-        30vh
-      ); /* Animate up for 2 seconds */
+      transform: translate(40vw, 30vh); /* Animate up for 2 seconds */
     }
     50% {
-      transform: translate(
-        25vw,
-        -15vh
-      ); /* Animate bottom right for 3 seconds */
+      transform: translate(40vw, -15vh);
     }
     60% {
-      transform: translate(25vw, 20vh); /* Animate up at right of the screen */
+      transform: translate(25vw, 20vh);
     }
     67% {
       transform: translate(25vw, 20vh);
