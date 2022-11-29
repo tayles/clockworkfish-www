@@ -27,8 +27,8 @@ export const manifest: Partial<ManifestOptions> = {
   name: seoConfig.siteName,
   short_name: seoConfig.siteName,
   description: seoConfig.description,
-  theme_color: '#ff8200',
-  background_color: '#2980b9',
+  theme_color: '#6d17cb',
+  background_color: '#2876f9',
   display: 'minimal-ui',
   icons: [
     {

@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --theme: #2980b9;
-  --theme-alt: #182848;
-  --accent: #ff8200;
+  --theme: #6d17cb;
+  --theme-alt: #2876f9;
+  --accent: #ff7519;
+  --accent-alt: #ffe460;
   --text: #fff;
 }
 
 body {
   background-color: var(--theme);
-  background: linear-gradient(0deg, var(--theme-alt) 0%, var(--theme) 50%);
+  background: linear-gradient(0deg, var(--theme) 0%, var(--theme-alt) 50%);
   color: var(--text);
 }
 

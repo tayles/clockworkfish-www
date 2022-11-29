@@ -140,20 +140,22 @@ const {
       href="/favicons/favicon.ico"
     />
     <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#2980b9" />
+    <meta name="msapplication-TileColor" content="#6d17cb" />
     <meta
       name="msapplication-TileImage"
       content="/favicons/favicon-144x144.png"
     />
     <meta name="msapplication-config" content="/browserconfig.xml" />
     <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
-    <meta name="theme-color" content="#ff8200" />
+    <meta name="theme-color" content="#6d17cb" />
 
     <!-- Service worker registration -->
     <script is:inline src="/registerSW.js"></script>
     <link rel="manifest" href="/manifest.webmanifest" />
   </head>
-  <body class="min-h-screen flex flex-col w-full overflow-x-hidden">
+  <body
+    class="min-h-screen flex flex-col w-full overflow-x-hidden selection:text-white selection:bg-purple-500"
+  >
     <main class="flex flex-1 flex-col h-[100%] w-full">
       <slot />
     </main>

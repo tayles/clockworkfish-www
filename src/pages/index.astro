@@ -7,21 +7,31 @@ import { Layout } from '@globals';
 <Layout title="Hello" ogTitle="CWF">
   <section class="flex-1 flex flex-col relative justify-center">
     <Paradise />
-    <div class="mx-auto p-4 z-0 text-center">
-      <p class="vcard">
-        <strong class="org">Clockwork Fish</strong>
+    <div
+      class="vcard mx-auto p-4 z-0 text-center text-5xl max-w-3xl leading-normal"
+    >
+      <h1 class="org inline font-bold" data-text="Clockwork Fish">
+        Clockwork Fish
+      </h1>
+      <span class="cwf-shadow tracking-wide">
         is a design and development agency based in
         <span class="adr">
           <span class="locality">Toronto</span>,
           <span class="country-name">Canada</span>
         </span>
-      </p>
+      </span>
     </div>
   </section>
 </Layout>
 
 <style>
-  p {
-    text-shadow: 1px 1px 3px black;
+  .cwf-shadow {
+    text-shadow: 1px 1px 3px var(--theme);
+  }
+
+  h1 {
+    background-image: linear-gradient(90deg, var(--accent-alt), var(--accent));
+    background-clip: text;
+    color: transparent;
   }
 </style>
