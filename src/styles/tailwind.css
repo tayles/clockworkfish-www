@@ -15,11 +15,3 @@ body {
   background: linear-gradient(0deg, var(--theme) 0%, var(--theme-alt) 50%);
   color: var(--text);
 }
-
-h1 {
-  color: var(--accent);
-}
-
-.accent {
-  color: var(--accent);
-}
