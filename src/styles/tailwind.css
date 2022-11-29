@@ -12,6 +12,13 @@
 
 body {
   background-color: var(--theme);
-  background: linear-gradient(0deg, var(--theme) 0%, var(--theme-alt) 50%);
+  background: linear-gradient(0deg, var(--theme-alt) 0%, var(--theme) 100%);
   color: var(--text);
+}
+
+h1 {
+  background-color: var(--accent);
+  background-image: linear-gradient(90deg, var(--accent-alt), var(--accent));
+  background-clip: text;
+  color: transparent;
 }
