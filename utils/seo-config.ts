@@ -10,7 +10,7 @@ export const seoConfig = {
     'Clockwork Fish is a design and development agency based in Toronto, Canada',
   type: 'website',
   image: {
-    url: 'https://cwf.tayles.co.uk/img/tayles-opengraph.png',
+    url: 'https://cwf.tayles.co.uk/img/clockworkfish-opengraph.png',
     alt: 'Clockwork Fish',
     width: 1200,
     height: 630,
