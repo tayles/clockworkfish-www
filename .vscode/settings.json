@@ -13,5 +13,11 @@
     "typescriptreact" // Enable .tsx
   ],
   "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "npm"
+  "eslint.packageManager": "npm",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }

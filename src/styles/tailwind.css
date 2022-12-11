@@ -11,6 +11,8 @@
 }
 
 body {
+  @apply selection:bg-purple-500 selection:text-white;
+
   background-color: var(--theme);
   background: linear-gradient(0deg, var(--theme-alt) 0%, var(--theme) 100%);
   color: var(--text);
